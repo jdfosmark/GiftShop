@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GiftShop.master.cs" Inherits="GiftShop.GiftShop" %>
+
+<%@ Register src="UserControls/DepartmentsList.ascx" tagname="DepartmentsList" tagprefix="uc1" %>
+<%@ Register Src="~/UserControls/CategoriesList.ascx" TagPrefix="uc1" TagName="CategoriesList" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Gift Shop</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="Window">
+        <div class="Main">
+            <div class="Left">
+                <div class="Container">
+                    &nbsp;<uc1:DepartmentsList ID="DepartmentsList1" runat="server" />
+                    <uc1:CategoriesList runat="server" id="CategoriesList" />
+                </div>
+            </div>
+
+            <div class="Right">
+                <div class="Header">
+                    <asp:HyperLink ID="HeaderLink" ImageUrl="~/Images/banner1.png" runat="server"
+                        NavigateUrl="~/" ToolTip="Gift Shop Logo" />
+                </div>
+
+                <div class="Contents">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
