@@ -66,6 +66,7 @@
     <Content Include="Images\banner2.png" />
     <Content Include="UserControls\CategoriesList.ascx" />
     <Content Include="UserControls\DepartmentsList.ascx" />
+    <Content Include="UserControls\Pager.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +116,13 @@
     <Compile Include="UserControls\DepartmentsList.ascx.designer.cs">
       <DependentUpon>DepartmentsList.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="GiftShop.Master" />
@@ -135,6 +143,10 @@
       <Project>{c626c7d1-236a-4d0c-a42a-7a3afe8f71f3}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProductImages\LargeImages\" />
+    <Folder Include="ProductImages\SmallImages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
