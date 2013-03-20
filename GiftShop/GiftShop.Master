@@ -18,7 +18,7 @@
         <div class="Main">
             <div class="Left">
                 <div class="Container">
-                    &nbsp;<uc1:DepartmentsList ID="DepartmentsList1" runat="server" />
+                    <uc1:DepartmentsList ID="DepartmentsList1" runat="server" />
                     <uc1:CategoriesList runat="server" id="CategoriesList" />
                 </div>
             </div>

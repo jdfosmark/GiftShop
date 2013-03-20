@@ -10,33 +10,42 @@
 namespace GiftShop {
     
     
-    public partial class Catalog {
+    public partial class Product {
         
         /// <summary>
-        /// catalogTitleLabel control.
+        /// titleLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label catalogTitleLabel;
+        protected global::System.Web.UI.WebControls.Label titleLabel;
         
         /// <summary>
-        /// catalogDescriptionLabel control.
+        /// productImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label catalogDescriptionLabel;
+        protected global::System.Web.UI.WebControls.Image productImage;
         
         /// <summary>
-        /// ProductsList1 control.
+        /// descriptionLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GiftShop.UserControls.ProductsList ProductsList1;
+        protected global::System.Web.UI.WebControls.Label descriptionLabel;
+        
+        /// <summary>
+        /// priceLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label priceLabel;
     }
 }

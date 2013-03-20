@@ -7,36 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GiftShop {
+namespace GiftShop.UserControls {
     
     
-    public partial class Catalog {
+    public partial class ProductsList {
         
         /// <summary>
-        /// catalogTitleLabel control.
+        /// topPager control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label catalogTitleLabel;
+        protected global::GiftShop.UserControls.Pager topPager;
         
         /// <summary>
-        /// catalogDescriptionLabel control.
+        /// list control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label catalogDescriptionLabel;
+        protected global::System.Web.UI.WebControls.DataList list;
         
         /// <summary>
-        /// ProductsList1 control.
+        /// bottomPager control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::GiftShop.UserControls.ProductsList ProductsList1;
+        protected global::GiftShop.UserControls.Pager bottomPager;
     }
 }

@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Gift Shop" Language="C#" MasterPageFile="~/GiftShop.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GiftShop.Default" %>
+<%@ Register src="UserControls/ProductsList.ascx" tagname="ProductsList" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
@@ -10,5 +11,5 @@
             This week we have a special price for these items: 
         </span>
     </h2>
-    [List of Products Here]
+    <uc1:ProductsList ID="ProductsList1" runat="server" />
 </asp:Content>

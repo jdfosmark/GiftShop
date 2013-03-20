@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Web;
-using System.Diagnostics;
 
 namespace Utilities
 {
@@ -48,6 +47,11 @@ namespace Utilities
         public static string ToProductImage(string filename)
         {
             return BuildAbsolute("/ProductImages/" + filename);
+        }
+
+        public static string ToCatalogPage(string page)
+        {
+            return BuildAbsolute(String.Format("Catalog.aspx?Page={0}", page));
         }
 
         private static string BuildAbsolute(string relativeUri)
